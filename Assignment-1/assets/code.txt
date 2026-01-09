@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets\bootstrap-5.3.8-dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+    <style>
+      .icon{
+          height: 100px;
+          width: 100px;
+
+      }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <img style="width: 50px;height: 50 px;" src="./assets/logo.png">
+        <a class="navbar-brand ps-2" href="#">Edu4All</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a class="nav-link active mx-3" aria-current="page" href="#">Home</a>
+            <a class="nav-link mx-3 " href="#">About</a>
+            <a class="nav-link mx-3" href="#">Contact</a>
+            <a class="nav-link mx-3 border border-primary  border-1 rounded" >Login</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="row g-0">
+        <div class="col-12 col-md-6 text-white bg-dark height=500">
+            <p  style="font-size: 50px;" class="mx-2 px-1">Innovation And Discovery</p>
+            <p class="mx-2 mt-2">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat,
+                vero soluta, nihil odio beatae dolorum illum velit esse totam nobis nam minima accusa
+                ntium sit consequatur voluptates! Delectus magnam ab totam!
+            </p>
+            <div>
+              <button class="mx-2 my-3 bg-primary">Sign up for Execution</button>
+              <button class="mx-2 my-3 text-white bg-dark border-1 border-white">Learn More</button>
+            </div>
+        </div>
+        <div class="col-12 col-md-6 img-fluid">
+            <img src="./assets/images/banner-1.jpg" style="width: 100%;height:500px" alt="gorl studying">
+        </div>
+    </div>
+
+    <div class="text-center fs-1 mt-5 ">
+      <h1 class="underline"><u>Statistics</u></h1>
+      <p style="font-size: medium;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magni expedita quisquam ea provident maxime.</p>
+    </div>
+    <div class="container py-5">
+      <div class="row text-center justify-content-center">
+        <div class="col-6 col-md-3 mb-4">
+          <div style="width:120px;height:120px;border:2px solid #9ad6e3;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;">
+            <i class="bi bi-person-fill" style="font-size:36px;"></i>
+          </div>
+          <h4 style="color:#1da1d8;margin-top:10px;">156</h4>
+          <p class="mb-0">Professor</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div style="width:120px;height:120px;border:2px solid #9ad6e3;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;">
+            <i class="bi bi-bank" style="font-size:36px;"></i>
+          </div>
+          <h4 style="color:#1da1d8;margin-top:10px;">12</h4>
+          <p class="mb-0">Campus</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div style="width:120px;height:120px;border:2px solid #9ad6e3;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;">
+            <i class="bi bi-people-fill" style="font-size:36px;"></i>
+          </div>
+          <h4 style="color:#1da1d8;margin-top:10px;">3257</h4>
+          <p class="mb-0">Students</p>
+        </div>
+        <div class="col-6 col-md-3 mb-4">
+          <div style="width:120px;height:120px;border:2px solid #9ad6e3;border-radius:50%;display:flex;align-items:center;justify-content:center;margin:auto;">
+            <i class="bi bi-book" style="font-size:36px;"></i>
+          </div>
+          <h4 style="color:#1da1d8;margin-top:10px;">346</h4>
+          <p class="mb-0">Courses</p>
+        </div>
+
+      </div>  
+    </div>
+
+
+
+    <div class="position-relative "
+        style="background-image: 
+            linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+            url('./assets/images/background-1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 600px;">
+        <div class="px-5 py-3 my-5 text-white text-center">
+
+        <h1><b>Featured Program</b></h1>
+        <p><b>Lorem ipsum dolor sit amet consectetur adipisicing elit.</b></p>
+
+            
+        </div>
+
+        <div class="row g-0 py-2">
+            <div class="px-5 col-6 col-md-3 ">
+              <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/banner-1.jpg">
+              <h4 style="text-align: center; background:floralwhite; width: 200px;">Antrhpology</h4>
+            </div>
+            <div class="px-3 col-6 col-md-3 ">
+              <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-copywriting.jpg">
+              <h4 style="text-align: center; background:floralwhite; width: 200px;">Copywriting</h4>
+            </div>
+            <div class="px-3 col-6 col-md-3 ">
+              <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-design.jpg">
+              <h4 style="text-align: center; background:floralwhite; width: 200px;">Design</h4>
+            </div>
+            <div class="px-3 col-6 col-md-3 ">
+              <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-economics.jpg">
+              <h4 style="text-align: center; background:floralwhite; width: 200px;">Economics</h4>
+            </div>
+        </div>
+
+        <div class="row g-0 py-3">
+          <div class="px-5 col-6 col-md-3 ">
+            <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-mathematics.jpg">
+            <h4 style="text-align: center; background:floralwhite; width: 200px;">mathematics</h4>
+          </div>
+          <div class="px-3 col-6 col-md-3 ">
+            <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-physics.jpg">
+            <h4 style="text-align: center; background:floralwhite; width: 200px;">Physics</h4>
+          </div>
+          <div class="px-3 col-6 col-md-3 ">
+            <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-programming.jpg">
+            <h4 style="text-align: center; background:floralwhite; width: 200px;">Programming</h4>
+          </div>
+          <div class="px-3 col-6 col-md-3 ">
+            <img style="height: 150px; width: 200px; object-fit: fill" src="./assets/images/card-psychology.jpg">
+            <h4 style="text-align: center; background:floralwhite; width: 200px;">Psyschology</h4>
+          </div>
+        </div>
+      </div>
+      </div>
+
+    <div class="row px-4 py-3">
+      <div class="col-12 col-md-7 mx-3">
+        <h2>A Few Words About The University</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit provident atque illum num
+          quam voluptatibus autem odio repellendus quisquam, aperiam eveniet eligendi eaque ea sit sed id accusamus cum neque mollitia?</p>
+        <button class="border-2 rounded">Learn More -></button>
+      </div>
+      <div class="col-5 col-md-3 ">
+        <img src="./assets/logo.png" style="max-width: 100%;" class="img-fluid" alt="logo">
+      </div>
+      <div class="py-4">
+        <video src="./assets/Welcome-to-Cambridge.mp4" style="max-width: 100%;" class="object-fit-fill" autoplay muted loop></video>
+      </div>
+      <div class="justify-content-center py-3">
+        <h2 class="text-center"><u>Trusted by Over 5000+ Students</u></h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+      </div>
+      <div class="">
+        <div class="row g-0">
+          <div class=" col-6 col-md-3">
+            <img src="./assets/images/galary-1.jpg" style="max-width: 100%; height: 250px;" alt="gal1">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-2.jpg" style="max-width: 100%; height: 250px;" alt="gal2">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-3.jpg" style="max-width: 100%; height: 250px;" alt="gal3">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-4.jpg" style="max-width: 100%; height: 250px;" alt="gal4">
+          </div>
+        </div>
+        <div class="row g-0">
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-5.jpg" style="max-width: 100%; height: 250px;" alt="gal5">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-6.jpg" style="max-width: 100%; height: 250px;" alt="gal6">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-7.jpg" style="max-width: 100%; height: 250px;" alt="gal7">
+          </div>
+          <div class="col-6 col-md-3">
+            <img src="./assets/images/galary-8.jpg" style="max-width: 100%; height: 250px;" alt="gal8">
+          </div>
+        </div>
+        
+      </div>
+      <div class="py-5 ">
+        <h1 class="text-center"><u>Our Team</u></h1>
+
+        <div class="container py-4">
+          <div class="row g-4">
+
+            <div class="col-6 col-md-3">
+              <div class="card h-30">
+                <img src="./assets/images/instructor-1.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 >Jhon Smith</h5>
+                  <p >GeoPhysics</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="card h-60">
+                <img src="./assets/images/instructor-2.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 >Sara will</h5>
+                  <p >Botany</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="card h-100">
+                <img src="./assets/images/instructor-3.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 >Laura Williams</h5>
+                  <p >CryptoGraphy</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-6 col-md-3">
+              <div class="card h-100">
+                <img src="./assets/images/instructor-3.jpg" class="card-img-top" alt="">
+                <div class="card-body">
+                  <h5 >Emily wolrds</h5>
+                  <p >Economics</p>  
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-0 py-3">
+        <div class="col-12 col-md-6 h-200 py-2">
+          <img style="max-width: 100%;" src="./assets/images/help.jpg">
+        </div>
+        <div class="col-12 col-md-6 h-200 bg-dark text-white ">
+          <div class="px-5 ">
+            <div class="text-center"><h2 style="padding:auto; padding-top: 15px;">Send Us Your Query</h2></div>
+            <h6>Name</h6>
+            <textarea style="width:500px;height: 50px;"></textarea>
+            <h6>Mobile</h6>
+            <textarea style="width:500px;height: 50px;"></textarea>
+            <h6>Email</h6>
+            <textarea style="width:500px;height: 50px;"></textarea>
+            <h6>Department</h6>
+            <textarea style="width:500px;height: 50px;"></textarea>
+            <h6>Message</h6>
+            <textarea style="width:500px;height: 200px;"></textarea>
+            <button style="background: rgb(20, 111, 216);">Send Message</button>
+          </div>
+        </div>
+      </div>
+    <div class="container py-5">
+    <div class="row align-items-start">
+      <div class="col-md-4 mb-4">
+        <h5 class="fw-bold mb-3">Contact</h5>
+        <p class="mb-1">
+          <i class="bi bi-telephone me-2"></i> +91 98765 54321
+        </p>
+        <p class="mb-1">
+          <i class="bi bi-envelope me-2"></i> contact@edu4all.com
+        </p>
+        <p>
+          <i class="bi bi-geo-alt me-2"></i> Delhi, India
+        </p>
+
+        <div class="d-flex gap-3 mt-3">
+          <i class="bi bi-facebook"></i>
+          <i class="bi bi-instagram"></i>
+          <i class="bi bi-twitter-x"></i>
+          <i class="bi bi-youtube"></i>
+        </div>
+    </div>
+    <div class="col-md-4 mb-4">
+      <h5 class="fw-bold mb-3">Newsletter</h5>
+      <p class="text-muted">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+
+      <div class="input-group">
+        <input type="email" class="form-control" placeholder="Your Email">
+        <button class="btn btn-primary">
+          <i class="bi bi-bell-fill"></i>
+        </button>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3740.7806764633715!2d85.8037610752383!3d20.350677281134352!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a1908e064769e73%3A0x9288172f3a98c7a4!2sSilicon%20University!5e0!3m2!1sen!2sin!4v1767811183882!5m2!1sen!2sin" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" ></iframe>
+    </div>
+
+  </div>
+  </div>
+  <div class="bg-dark text-center text-white my-2">
+    <p>Copyright @ 2025 Edu4All</p>
+  </div>
+  <script src="./assets\bootstrap-5.3.8-dist\js\bootstrap.bundle.min.js"></script>
+</body>
+</html>
