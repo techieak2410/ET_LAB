@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box-div{
+            background-color: black;
+            height: 500px;
+            width: 500px;
+        }
+        #color-box{
+            height: 30px;
+            width: 100px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="maindiv" id="maindiv">
+        <div class="box-div">
+
+        </div>
+        <div  id ="tochange">
+        </div>
+    </div>
+    <script>
+        let colors=["Blue","Green","Red"];
+        htmlStr="<div>";
+        for( let c of colors){
+            let s="<button onclick= display('"+c+"') id=color-box>"+c+"</button>";
+            htmlStr+=s;
+        }
+        htmlStr+="</div>";
+        document.getElementById("tochange").innerHTML=htmlStr;
+        function display(colur){
+            let chan=document.querySelector(".box-div")
+            chan.style.backgroundColor=colur;
+        }
+    </script>
+</body>
+</html>

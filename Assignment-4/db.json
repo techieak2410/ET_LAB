@@ -1,0 +1,22 @@
+{
+  "students": [
+    {
+      "id": "23bced29",
+      "name": "Ashish Kumar Gupta",
+      "branch": "CEN",
+      "CGPA": 9.0
+    },
+    {
+      "id": "23bced30",
+      "name": "Rahul Sharma",
+      "branch": "CSE",
+      "CGPA": 8.5
+    },
+    {
+      "id": "23bced31",
+      "name": "Priya Singh",
+      "branch": "ECE",
+      "CGPA": 8.9
+    }
+  ]
+}

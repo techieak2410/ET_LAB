@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="maindiv">
+        <div id="formdiv">
+            <h2>Student Form</h2>
+            <form id="studentform">
+                <label>Student ID</label>
+                <input type="text" id="id" placeholder="enter id" />
+                <br/>
+                <label>Student Name</label>
+                <input type="text" id="name" placeholder="enter name"/>
+                <br/>
+                <label>Student Branch</label>
+                <input type="text" id="branch" placeholder="enter branch"/>
+                <br/>
+                <label>Student cgpa</label>
+                <input type="number" id="cgpa" step="0.1"  placeholder="enter cgpa"/>
+                <br/>
+                <button id="submitButton" type="submit">Add Student</button>
+
+            </form>
+        </div>
+        <div id="table">
+            <table class="table table-stripped border-2">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>branch</th>
+                    <th>CGPA</th>
+                </tr>
+            </thead>
+            <tbody id="studentData">
+
+            </tbody>
+        </table>
+    </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="./q4.js"></script>
+
+</body>
+</html>

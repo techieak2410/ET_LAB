@@ -1,0 +1,7 @@
+{
+  "students": [
+    { "id": "1", "name": "Ashish", "branch": "CEN", "CGPA": 7.8 },
+    { "id": "2", "name": "ramu kaka", "branch": "CST", "CGPA": 9.8 },
+    { "id": "3", "name": "Werty", "branch": "CSE", "CGPA": 8.8 }
+  ]
+}

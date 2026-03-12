@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="maindiv">
+        <h2 id="cont">You have Clicked this button 1 times</h2>
+        <button onclick="countinc()">Click</button>
+    </div>
+    <script>
+        let n=1
+        function countinc(){
+            n=n+1;
+            let ch=document.getElementById("cont");
+            ch.innerHTML="<h2 >You have Clicked this button "+ n +"times</h2>"
+        }
+    </script>
+</body>
+</html>

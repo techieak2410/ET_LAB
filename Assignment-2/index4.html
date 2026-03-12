@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO Application</title>
+    <style>
+        body {
+            background-color: #ffffff;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        input[type="text"], input[type="date"], input[type="time"] {
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ccc;
+            width: 25%;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            padding: 8px 15px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #e0e0e0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th, table td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        table th {
+            background-color: #f9f9f9;
+            font-weight: bold;
+        }
+        .delete-btn {
+            background: none;
+            border: none;
+            color: red;
+            font-size: 20px;
+            cursor: pointer;
+            padding: 0;
+        }
+        .delete-btn:hover {
+            color: darkred;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <form onsubmit="addtodo(event)">
+            <div id="inputs">
+                <input type="text" name="name" placeholder="Enter a todo name"> <br>
+                <input type="date" name="date" placeholder="Enter date"> <br>
+                <input type="time" name="time" placeholder="Enter a time"><br>
+                <br>
+                <input type="submit" value="Add">
+            </div>
+            <div id="dat">
+                <table>
+                    <tr><th>Todo</th><th>Date</th><th>Time</th><th></th></tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <script>
+        let todos = [];
+
+        function addtodo(e) {
+            e.preventDefault();
+            
+            let name = e.target.name.value;
+            let date = e.target.date.value;
+            let time = e.target.time.value;
+            
+            if (name === '' || date === '' || time === '') {
+                alert('Please fill in all fields!');
+                return;
+            }
+            
+            const todo = {
+                id: Date.now(),
+                task: name,
+                date: date,
+                time: time
+            };
+            
+            todos.push(todo);
+            e.target.reset();
+            renderTodos();
+        }
+
+        function deleteTodo(id) {
+            todos = todos.filter(todo => todo.id !== id);
+            renderTodos();
+        }
+
+        function renderTodos() {
+            const datDiv = document.getElementById('dat');
+            let htmlStr = "<table>";
+            htmlStr += "<tr><th>Todo</th><th>Date</th><th>Time</th><th></th></tr>";
+            
+            todos.forEach(todo => {
+                htmlStr += `<tr>
+                    <td>${todo.task}</td>
+                    <td>${todo.date}</td>
+                    <td>${todo.time}</td>
+                    <td><button class="delete-btn" type="button" onclick="deleteTodo(${todo.id})">×</button></td>
+                </tr>`;
+            });
+            
+            htmlStr += "</table>";
+            datDiv.innerHTML = htmlStr;
+        }
+    </script>
+</body>
+</html>
